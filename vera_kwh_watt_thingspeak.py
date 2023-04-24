@@ -8,7 +8,7 @@ from time import localtime, strftime
 
 def logData(field,value):
 
-       params = urllib.parse.urlencode({field: value,'key':'JW2YZ9M61EPMFJGY'})
+       params = urllib.parse.urlencode({field: value,'key':'XXXXXXXXXXX'})
        headers = {"Content-type": "application/x-www-form-urlencoded","Accept": "text/plain"}
        conn = http.client.HTTPConnection("api.thingspeak.com:80")
 
@@ -64,8 +64,8 @@ first_time =  datetime.datetime.now()
 
 Connected = False   #global variable for the state of the connection
  
-broker_address= "192.168.1.100"  #Broker address
-port = 1884                         #Broker port
+broker_address= "192.168.1.10"  #Broker address
+port = 1883                         #Broker port
 #user = "yourUser"                    #Connection username
 #password = "yourPassword"            #Connection password
  
